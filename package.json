@@ -1,0 +1,29 @@
+{
+  "name": "@ovidb/graphql-to-yup",
+  "version": "1.0.0",
+  "description": "Generate Yup schema from GraphQL",
+  "main": "index.js",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.9.1",
+    "graphql": "^14.5.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ovidb/graphql-to-yup.git"
+  },
+  "keywords": [
+    "graphql",
+    "codegen",
+    "yup",
+    "schema"
+  ],
+  "author": "ovidb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovidb/graphql-to-yup/issues"
+  },
+  "homepage": "https://github.com/ovidb/graphql-to-yup#readme"
+}

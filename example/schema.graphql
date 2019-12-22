@@ -1,0 +1,25 @@
+enum Enumerable {
+  Foo
+  Bar
+}
+
+input ObjectInput {
+  string: String
+}
+
+input TypeTesting {
+  string: String
+  requiredString: String!
+  array: [String]
+  arrayInnerRequired: [String!]
+  arrayOuterRequired: [String]!
+  arrayAllRequired: [String!]!
+  arrayOfObject: [ObjectInput]
+  arrayOfObjectReq: [ObjectInput!]
+  arrayOfObjectReqArr: [ObjectInput]!
+  arrayOfEnumerable: [Enumerable]
+  object: ObjectInput
+  objectRequired: ObjectInput!
+  enumerable: Enumerable
+  enumberableRequired: Enumerable!
+}

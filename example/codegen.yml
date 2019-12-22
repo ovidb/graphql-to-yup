@@ -1,0 +1,6 @@
+schema: schema.graphql
+generates:
+  output.js:
+    - index.js:
+        inputTypeNames:
+          - TypeTesting
