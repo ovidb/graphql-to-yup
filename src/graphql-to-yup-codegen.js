@@ -58,12 +58,12 @@ module.exports = {
   plugin: (schema, documents, config) => {
     const { inputTypeNames } = config;
 
-    let output = '';
+    let output = `const yup = require('yup');\n\n`;
     inputTypeNames.forEach(typeName => {
       const type = schema.getType(typeName);
 
       if (type) {
-        output += `const ${typeName}Schema = ${analyzeField(schema.getType(typeName), true)};\n`;
+        output += `const ${typeName}Schema = ${analyzeField(schema.getType(typeName), true)};\n\n`;
       }
     });
 

@@ -1,6 +1,6 @@
 schema: schema.graphql
 generates:
   output.js:
-    - index.js:
+    - ../index.js:
         inputTypeNames:
           - TypeTesting
