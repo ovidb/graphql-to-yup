@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "/src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ovidb/graphql-to-yup.git"
