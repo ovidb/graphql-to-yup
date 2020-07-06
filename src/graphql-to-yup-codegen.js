@@ -23,7 +23,7 @@ const getListType = (type, required) => {
 };
 
 const getEnumType = (type, required) => {
-  return `yup.mixed.oneOf([${type
+  return `yup.mixed().oneOf([${type
     .getValues()
     .map(obj => `'${obj.value}'`)
     .join(',')}])${required ? '.required()' : ''}`;
